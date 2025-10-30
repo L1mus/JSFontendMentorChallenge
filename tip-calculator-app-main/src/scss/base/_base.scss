@@ -1,0 +1,33 @@
+// src/scss/base/_base.scss
+// Berisi CSS Custom Properties (Design Tokens)
+// dan gaya dasar <body>.
+
+:root {
+  --clr-green-400: hsl(172, 67%, 45%);
+  --clr-green-900: hsl(183, 100%, 15%);
+  --clr-grey-50: Grey 50: hsl(189, 47%, 97%);
+  --clr-grey-200: hsl(185, 41%, 84%);
+  --clr-grey-400: hsl(184, 14%, 56%);
+  --clr-grey-500: hsl(186, 14%, 43%);
+  --clr-white: hsl(0, 100%, 100%);
+
+  --ff-main: "Space Mono", monospace;
+  --fs-base: clamp(1rem, 0.9rem + 0.25vw, 1.125rem);
+
+  --radius-default: 8px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-main);
+  font-size: var(--fs-base);
+  color: var(--clr-text);
+  background-color: var(--clr-green-400);
+}

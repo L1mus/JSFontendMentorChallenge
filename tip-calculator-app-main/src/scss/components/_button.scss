@@ -1,0 +1,21 @@
+@use "../abstracts" as abs;
+
+.btn {
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: var(--radius-default);
+  cursor: pointer;
+  font-weight: 700;
+
+  background-color: #eee;
+  color: #333;
+
+  &--primary {
+    background-color: var(--clr-primary);
+    color: white;
+
+    @include abs.respond("tablet") {
+      padding: 1em 2em;
+    }
+  }
+}

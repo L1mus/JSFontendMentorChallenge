@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+  <main>
+    <div class="main-container">
+      <div class="bill-container">
+        <h5>Bill</h5>
+        <form method="post" class="bill-display">
+          <img src="/images/icon-dollar.svg" alt="dollar icon">
+          <input type="number" name="bill-payment" id="bill-payment" placeholder="0">
+        </form>
+      </div>
+      <div class="select-tip-container">
+        <h5>Select Tip %</h5>
+        <div class="tip-layout">
+          <button class="btn">5%</button>
+          <button class="btn">10%</button>
+          <button class="btn">15%</button>
+          <button class="btn">25%</button>
+          <button class="btn">50%</button>
+          <button class="btn">Custom</button>
+        </div>
+      </div>
+
+      <div class="people-container">
+        Number of People
+        <form method="post" class="people-display">
+          <img src="/images/icon-person.svg" alt="person icon">
+          <input type="number" name="people-input" id="people-input">
+        </form>
+      </div>
+
+      <div class="info-container">
+        <div class="description">
+          <h4>Tip Amount</h4>
+          <p>/ person</p>
+        </div>
+        <div></div>
+        <div class="description">
+          <h4>Total</h4>
+          <p>/ person</p>
+          <div></div>
+        </div>
+
+        <button class="btn">Reset</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="src/js/main.js"></script>
+</body>
+
+</html>
