@@ -1,7 +1,8 @@
-@use "variables" as var;
+@use "index" as abs;
 
 @mixin respond($breakpoint-name) {
-  $width: map-get(var.$breakpoints, $breakpoint-name);
+  $width: map-get(abs.$breakpoints, $breakpoint-name);
+
   @media (min-width: $width) {
     @content;
   }
