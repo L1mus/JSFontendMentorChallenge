@@ -1,0 +1,56 @@
+@use '../abstracts' as abs;
+
+
+.form-display{
+  width: 100%;
+  position: relative;
+}
+
+.icon{
+  position: absolute;
+  top: 30%;
+  left: 0.5rem;
+}
+
+
+.input-form {
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+
+  &_form-style{
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    background-color: abs.$clr-grey-200;
+    font-size: var(--fs-h2);
+    font-weight: bold;
+    border: transparent;
+    border-radius: 6px;
+    padding: 0.3rem;
+
+    &:focus,
+    &:hover{
+      cursor: pointer;
+      outline : 2px solid abs.$clr-primary;
+      color: abs.$clr-green-900;
+    }
+
+    &::placeholder{
+      color: abs.$clr-grey-500;
+    }
+  }
+}
+
+@include abs.respond('tablet') {
+
+}
+
+@include abs.respond('dekstop') {
+
+}

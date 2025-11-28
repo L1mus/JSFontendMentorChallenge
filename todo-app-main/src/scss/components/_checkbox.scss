@@ -1,0 +1,91 @@
+
+@use "../abstracts" as var ;
+
+.todo-items {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px;
+  user-select: none;
+  border-bottom-width: 0.1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .custom-box {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--border-color);
+
+    border-radius: 50%;
+    background-color: var(--bg-container-color);
+    transition: all 0.2s ease;
+    margin-right: 1.3em;
+  }
+
+
+  .custom-box::after {
+    content: url("/images/icon-check.svg");
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+
+  .todo-text {
+    color: var(--text-todo-color);
+    transition: all 0.2s ease;
+  }
+
+
+  input[type="checkbox"]:checked {
+
+    + .custom-box {
+      background: linear-gradient(var.$clr-checkBg);
+    }
+
+    + .custom-box::after {
+      opacity: 1;
+    }
+
+    ~ .todo-text {
+      color: var(--text-color);
+      text-decoration: line-through;
+    }
+  }
+
+  .btn-delete {
+    margin-left: auto;
+    padding-right: 8px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+    transition: transform 0.2s ease-out;
+
+    &:active {
+      transform: scale(0.95);
+      transition-duration: 0.05s;
+    }
+
+    &:hover {
+      opacity: 1;
+      .icon-cross {
+        fill: red;
+      }
+    }
+  }
+}

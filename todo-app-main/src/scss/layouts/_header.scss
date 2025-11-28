@@ -1,0 +1,39 @@
+@use "../abstracts" as var;
+
+
+
+header{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  h1{
+    color: var.$clr-gray-50;
+    letter-spacing: 0.5em;
+    font-weight: 600;
+  }
+
+  button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+    transition: transform 0.1s ease-out;
+
+    &:active {
+      transform: scale(0.95);
+      transition-duration: 0.05s;
+    }
+  }
+
+  img{
+    width: 25px;
+    height: 25px;
+  }
+}

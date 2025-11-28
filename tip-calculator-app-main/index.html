@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+          rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="dist/style.css">
+
+</head>
+<body>
+<header class="logo">
+    <img src="images/logo.svg" alt="Splitter Logo">
+</header>
+<main class="calculator">
+    <div class="tip-container" >
+        <div class="bill-container">
+            <h5>Bill</h5>
+            <form method="post" class="form-display">
+                <img class="icon" src="/images/icon-dollar.svg" alt="dollar icon" aria-hidden="true">
+                <input id="bill" type="number" name="bill-payment" class="input-form_form-style" placeholder="0" value=0 >
+            </form>
+        </div>
+        <div class="select-tip-container">
+            <h5>Select Tip %</h5>
+            <div class="tip-layout">
+                <button value="5" class="btn btn_default-style">5%</button>
+                <button value="10" class="btn btn_default-style">10%</button>
+                <button value="15" class="btn btn_default-style">15%</button>
+                <button value="25" class="btn btn_default-style">25%</button>
+                <button value="50" class="btn btn_default-style">50%</button>
+                <form class="form-tip">
+                    <input type="number" name="bill-tip" id="bill-tip" class="input-form input-style btn_default-style" placeholder="Custom">
+                </form>
+            </div>
+        </div>
+
+        <div class="bill-container">
+            Number of People
+            <form method="post" class="form-display">
+                <img class="icon" src="/images/icon-person.svg" alt="person icon" aria-hidden="true">
+                <input type="number" name="people-input" class="input-form_form-style" id="people-input" placeholder="0">
+            </form>
+        </div>
+    </div>
+
+        <div class="info-container">
+            <div class="description">
+                <div>
+                <h4 class="description_tip-amount">Tip Amount</h4>
+                <p class="description_person">/ person</p>
+                </div>
+                <div class="description_total-amount">
+                    <img src="/images/icon-dollar.svg" alt="dollar icon" aria-hidden="true" class="description_filter-color">
+                    <p id="tip-amount">0.00</p>
+                </div>
+            </div>
+
+            <div class="description">
+                <div>
+                    <h4 class="description_tip-amount">Total</h4>
+                    <p class="description_person">/ person</p>
+                </div>
+                <div class="description_total-amount">
+                    <img src="/images/icon-dollar.svg" alt="dollar icon" aria-hidden="true" class="description_filter-color">
+                    <p id="total">0.00</p>
+                </div>
+            </div>
+            <button id="btn-reset" class="btn_reset-style info-container_align-item" >Reset</button>
+        </div>
+</main>
+
+<script src="src/js/main.js"></script>
+</body>
+</html>

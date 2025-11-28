@@ -1,0 +1,15 @@
+$font-family-main: "Space Mono", monospace;
+$font-weight-bold: 700;
+
+$clr-primary: hsl(172, 67%, 45%);
+$clr-green-900: hsl(183, 100%, 15%);
+$clr-grey-500: hsl(186, 14%, 43%);
+$clr-grey-400: hsl(184, 14%, 56%);
+$clr-grey-200: hsl(185, 41%, 84%);
+$clr-grey-50: hsl(189, 41%, 97%);
+$clr-white: hsl(0, 0%, 100%);
+
+$breakpoints: (
+        "tablet": 768px,
+        "desktop": 1024px
+);

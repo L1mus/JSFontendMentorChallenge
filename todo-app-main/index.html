@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="/dist/style.css">
+  <title>Frontend Mentor | Todo app</title>
+
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>TODO</h1>
+        <button id="btn-switch-theme">
+            <img class="icon-theme" src="/images/icon-sun.svg" alt="button switch theme">
+        </button>
+    </header>
+    <main class="main-container">
+        <div class="container-input-todo">
+            <p class="circle"></p>
+          <input id="input-text-todo" class="input" type="text" name="input-todo" placeholder="Creat a new Todo...">
+
+        </div>
+
+        <div class="todo-list-container">
+               <div id="todo-list" class="todo-list"></div>
+               <div class="description">
+                   <p id="remaining-todo" class="remaining-todo">5 item left</p>
+                   <nav class="nav-desktop">
+                       <ul class="navigation navigation_dekstop">
+                           <li><a href="#">All</a></li>
+                           <li><a href="#">Active</a></li>
+                           <li><a href="#">Completed</a></li>
+                       </ul>
+                   </nav>
+                   <button class="btn-clear remaining-todo" id="btn-clear" type="reset">Clear Completed</button>
+               </div>
+        </div>
+          <nav class="nav-mobile">
+              <ul class="navigation navigation_mobile">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#">Active</a></li>
+                  <li><a href="#">Completed</a></li>
+              </ul>
+          </nav>
+          <p class="info-text">Drag and drop to reorder list</p>
+   </main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="/src/js/main.js"></script>
+</body>
+</html>

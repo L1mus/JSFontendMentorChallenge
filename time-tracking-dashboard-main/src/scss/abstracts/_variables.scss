@@ -1,0 +1,26 @@
+$font-family-main: "Rubik", sans-serif;
+//fontweight
+//300,400,500
+//primary
+
+$clr-primary: hsl(246, 80%, 60%);
+$clr-orange-300: hsl(15, 100%, 70%);  //work
+$clr-blue-300: hsl(195, 74%, 62%);  //play
+$clr-pink-400: hsl(348, 100%, 68%);  //study
+$clr-green-400: hsl(145, 58%, 55%);  //exercise
+$clr-purple-700: hsl(264, 64%, 52%); //social
+$clr-yellow-300: hsl(43, 84%, 65%); //self care
+
+//neutral
+$clr-navy-950: hsl(226, 43%, 10%);
+$clr-navy-900: hsl(235, 46%, 20%);
+$clr-purple-500: hsl(235, 45%, 61%);
+$clr-navy-200: hsl(236, 100%, 87%);
+$clr-navy-100: hsl(235, 10%, 35%);
+
+
+$breakpoints: (
+        "tablet": 768px,
+        "desktop": 1024px,
+        "desktop-large": 1440px
+);

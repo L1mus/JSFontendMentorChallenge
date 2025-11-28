@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="dist/style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+<main>
+  <p>Report for</p>
+  <h1>Jeremy Robson</h1>
+
+  <nav>
+      <ul>
+          <li><a>Daily</a></li>
+          <li><a>Weekly</a></li>
+          <li><a>Monthly</a></li>
+      </ul>
+  </nav>
+    <div id="container">
+<div class="main-container main-container_work">
+    <div id="work" class="work container">
+        <div class="layout-header">
+            <div class="dot-menu-wrapper">
+                <button class="dot-btn" id="dotBtn" aria-label="Opsi lainnya" aria-expanded="false" aria-haspopup="true" aria-controls="cardDropdown">
+                    &#8942;
+                </button>
+
+                <div id="cardDropdown" class="dropdown-menu" role="menu">
+                    <button class="btn-menu" role="menuitem">menu1</button>
+                    <button class="btn-menu" role="menuitem">menu2</button>
+                    <button class="btn-menu" role="menuitem">menu3</button>
+                </div>
+            </div>
+          <h2>Work</h2>
+        </div>
+      <h1><span>32</span>hrs</h1>
+      <p><span>Last Week</span> - <span>36</span>hrs</p>
+    </div>
+</div>
+    </div>
+
+</main>
+
+<script src="src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@use "../abstracts" as abs;
+
+:root{
+
+  --bg-color: #{abs.$light-bg};
+  --bg-container-color: #{abs.$light-bg-container};
+  --text-color: #{abs.$light-text};
+  --text-todo-color: #{abs.$light-todo-text};
+  --border-color: #{abs.$light-border};
+  --btn-bg-color: #{abs.$light-button-bg};
+  --bg-img: url("/images/bg-desktop-light.jpg");
+
+  --fs-h1: clamp(2.250rem,2.525rem + 0.25vw, 2.5rem );
+  --fs-h2: clamp(1.375rem,1.4rem + 0.25vw, 1.5rem );
+  --fs-body: clamp(1rem,1.025rem + 0.25vw, 1.125rem );
+  --fs-label: clamp(0.75rem,0.775rem + 0.25vw, 0.875rem );
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode{
+  --bg-color: #{abs.$dark-bg};
+  --bg-container-color: #{abs.$dark-bg-container};
+  --text-color: #{abs.$dark-text};
+  --text-todo-color: #{abs.$dark-todo-text};
+  --border-color: #{abs.$dark-border};
+  --btn-bg-color: #{abs.$dark-button-bg};
+  --bg-img: url("/images/bg-desktop-dark.jpg");
+}
+
+body{
+  font-family: abs.$font-family-main;
+  font-size: var(--fs-body);
+  background-color: var(--bg-color);
+  background-image:var(--bg-img);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100vw 30vh;
+  color: var(--text-color);
+  //padding: 0 5% 0 5%;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+@include abs.respond('tablet') {
+  body{
+    background-size: 100vw 40vh;
+  }
+}
+
+.container{
+  display: grid;
+  grid-template-columns: clamp(310px, 50vw ,550px);
+  gap: 24px;
+}
+
+main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+
+.nav-mobile{
+  width: 100%;
+}
+
+
