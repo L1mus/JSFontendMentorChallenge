@@ -1,8 +1,9 @@
-@use "abstracts" ;
-
-@use "base/base";
+@use "abstracts";
 @use "base/reset";
+@use "base/base";
 
-@use "components/container";
-@use "components/dotmenu";
 
+@use "layouts/dashboard";
+
+@use "components/profile";
+@use "components/card";

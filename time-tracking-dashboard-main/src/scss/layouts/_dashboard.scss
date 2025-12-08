@@ -1,0 +1,14 @@
+@use '../abstracts' as var;
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1110px;
+  margin: 0 auto;
+
+  @include var.respond('desktop') {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}

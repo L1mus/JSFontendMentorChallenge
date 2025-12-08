@@ -1,0 +1,20 @@
+@use "../abstracts" as abs;
+
+:root{
+  --fs-h1: clamp(2.250rem,2.525rem + 0.25vw, 2.5rem );
+  --fs-h2: clamp(1.375rem,1.4rem + 0.25vw, 1.5rem );
+  --fs-body: clamp(0.875rem,0.9rem + 0.25vw, 1rem );
+  --fs-label: clamp(0.75rem,0.775rem + 0.25vw, 0.875rem );
+}
+
+body{
+  font-family: abs.$font-family-main;
+  font-size: var(--fs-body);
+  background-color: abs.$clr-grey-200;
+  color: abs.$clr-grey-500;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 0 5% 0 5%;
+}
+
