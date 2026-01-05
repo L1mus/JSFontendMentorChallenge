@@ -1,13 +1,13 @@
-$font-family-main: "Space Mono", monospace;
+$font-family-main: "Poppins", sans-serif;
 $font-weight-bold: 700;
 
-$clr-primary: hsl(172, 67%, 45%);
-$clr-green-900: hsl(183, 100%, 15%);
-$clr-grey-500: hsl(186, 14%, 43%);
-$clr-grey-400: hsl(184, 14%, 56%);
-$clr-grey-200: hsl(185, 41%, 84%);
-$clr-grey-50: hsl(189, 41%, 97%);
-$clr-white: hsl(0, 0%, 100%);
+$clr-purple-500: hsl(259, 100%, 65%);
+$clr-red-400: hsl(0, 100%, 67%);
+$clr-grey-500: hsl(0, 1%, 44%);
+$clr-grey-200: hsl(0, 0%, 86%);
+$clr-grey-100: hsl(0, 0%, 94%);
+$clr-white: hsl(0, 100%, 100%);
+$clr-black: hsl(0, 0%, 0%);
 
 $breakpoints: (
         "tablet": 768px,
